@@ -129,7 +129,7 @@ const handleDeleteBtn = async (code) => {
           <tbody className="divide-y divide-gray-100">
             {linkList.map((link, index) => (
               <tr key={index} className="hover:bg-gray-50 transition-all duration-150">
-                <td className="px-5 py-3 text-blue-600 font-medium max-w-[180px] truncate">
+                <td className="px-5 py-3  font-medium max-w-[180px] truncate">
                   {link.shortURL}
                 </td>
                 <td className="px-5 py-3 max-w-[260px] truncate" title={link.url}>
@@ -142,13 +142,13 @@ const handleDeleteBtn = async (code) => {
                   <div className="flex gap-3 items-center">
                     <button
                       onClick={() => handleViewBtn(link.code)}
-                      className="px-4 py-1.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 active:scale-95 transition-all duration-200"
+                      className="px-4 py-1.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 active:scale-95 transition-all duration-200 cursor-pointer"
                     >
                       View
                     </button>
                     <button
                       onClick={() => handleDeleteBtn(link.code)}
-                      className="px-4 py-1.5 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 active:scale-95 transition-all duration-200"
+                      className="px-4 py-1.5 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 active:scale-95 transition-all duration-200 cursor-pointer"
                     >
                       Delete
                     </button>
