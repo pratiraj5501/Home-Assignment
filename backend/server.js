@@ -13,7 +13,7 @@ const app = express();
 const PORT=5000;
 
 // Middlewares
-const allowedOrigins = ["http://localhost:5173", "http://example.com"];
+const allowedOrigins = ["http://localhost:5173", "https://home-assignment-iota.vercel.app/","https://home-assignment-iota.vercel.app"];
 app.use(cors({
   origin:allowedOrigins,
   methods:["GET","POST","DELETE"],
